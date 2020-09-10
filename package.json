@@ -1,0 +1,42 @@
+{
+	"name": "@bazo/js-feature-toggler",
+	"version": "1.0.0",
+	"description": "Feature toggling for javascript",
+	"repository": "git@github.com:bazo/js-feature-toggler",
+	"author": "Martin Bažík <martin@bazo.sk>",
+	"license": "MIT",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"devDependencies": {
+		"@types/jest": "^26.0.13",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-loader": "^4.0.2",
+		"eslint-plugin-jest": "^24.0.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "^7.20.6",
+		"jest": "^26.4.2",
+		"prettier": "^2.1.1",
+		"ts-jest": "^26.3.0",
+		"typescript": "^4.0.2"
+	},
+	"prettier": {
+		"trailingComma": "es5",
+		"tabWidth": 4,
+		"semi": true,
+		"singleQuote": false,
+		"useTabs": true,
+		"printWidth": 120
+	},
+	"scripts": {
+		"test": "jest",
+		"build": "tsc",
+		"prepublish": "yarn build",
+		"pub": "yarn publish --access public && git push"
+	},
+	"files": [
+		"lib/**/*"
+	],
+	"dependencies": {
+		"eslint": "^7.8.1"
+	}
+}
